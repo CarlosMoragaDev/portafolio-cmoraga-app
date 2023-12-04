@@ -202,7 +202,7 @@ setTimeout(() => {
           </div>
           <div>
           </div>
-          <!-- <div class="p-5">
+          <div class="p-5">
             <div class="grid justify-items-center">
               <div class="p-5 w-80% flex flex-col items-center justify-center text-center rounded-md border-4 border-main-color shadow-xl
                  transition border-opacity-0 hover:border-opacity-100 hover:bg-blue-200">
@@ -270,7 +270,7 @@ setTimeout(() => {
                 </UCard>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
     </div>
