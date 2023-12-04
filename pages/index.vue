@@ -1,16 +1,18 @@
 <script lang="ts" setup>
+import { ref } from 'vue'
+
 const content = {
   image: "/images/5851e722a5cf496eb2b780784e4917bc.jpg",
 }
 const infoPokemon = ref()
 
 const getPokemonData = async () => {
-    let randomNumber = Math.floor(Math.random() * 1160) + 1;
+  let randomNumber = Math.floor(Math.random() * 1160) + 1;
 
-    const { data: response } = await useFetch("https://pokeapi.co/api/v2/pokemon/" + randomNumber, {
-      method: "GET",
-    });
-    infoPokemon.value = response.value;
+  const { data: response } = await useFetch("https://pokeapi.co/api/v2/pokemon/" + randomNumber, {
+    method: "GET",
+  });
+  infoPokemon.value = response.value;
 };
 
 const data = ref('')
@@ -24,10 +26,10 @@ const getNewData = async function fetchData() {
   const response = await fetch('https://pokeapi.co/api/v2/pokemon/' + randomNumber)
   const jsonData = await response.json()
   data.value = jsonData; // Almacena el JSON completo en la variable reactiva 'data'
-        dataId.value = jsonData.id; 
-        dataName.value = jsonData.name;
-        dataTypes.value = jsonData.types;
-        dataImage.value = jsonData.sprites?.front_default;
+  dataId.value = jsonData.id;
+  dataName.value = jsonData.name;
+  dataTypes.value = jsonData.types;
+  dataImage.value = jsonData.sprites?.front_default;
 }
 
 const isLoading = ref(true);
@@ -39,7 +41,8 @@ setTimeout(() => {
 </script>
 
 <template>
-   <div class="bg-casper-500">
+  <NavBar />
+  <div class="bg-casper-500">
     <div class="mx-auto max-w-full lg:p-20 sm:p-4">
       <section class="home" id="home">
         <div class="grid lg:grid-cols-4 sm:grid-col-1 gap-4 font-mono">
