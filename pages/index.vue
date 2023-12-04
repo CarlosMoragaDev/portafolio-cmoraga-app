@@ -221,25 +221,6 @@ setTimeout(() => {
                       <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
                     </div>
                   </template>
-                  <!-- <div v-if="infoPokemon" class="flex justify-center">
-                    <img class="w-40" :src=infoPokemon?.sprites?.front_default alt="test-pokemon" />
-                    <ul>
-                      <div class="lg:text-2xl sm:text-xl font-light text-justify capitalize p-5">{{ 'N°: ' +
-                        infoPokemon?.id
-                      }}
-                      </div>
-                      <div class="lg:text-2xl sm:text-xl font-light text-justify capitalize p-5">{{ 'Nombre: ' +
-                        infoPokemon?.name }}</div>
-                      <div v-for="(type, index) in infoPokemon?.types" :key="index">
-                        <div class="lg:text-2xl sm:text-xl font-light text-justify capitalize p-5">{{
-                          'Tipo: ' + type?.type?.name }}
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                  <div v-else>
-                    <div class="flex justify-center">Error Data</div>
-                  </div> -->
                   <div v-if="isLoading" class="grid justify-items-center">
                     <UButton size="xl" variant="outline" loading>Cargando</UButton>
                   </div>
