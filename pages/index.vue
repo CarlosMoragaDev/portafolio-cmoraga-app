@@ -52,12 +52,17 @@ setTimeout(() => {
               ring: '', background: 'bg-gradient-to-r from-green-400/20 to-blue-500/40'
             }">
               <div class="lg:px-20 sm:px-10 ">
-                <div class="lg:text-5xl sm:text-3xl font-bold lg:px-20 sm:px-10 text-justify flex justify-center">Hola
-                  Mundo</div>
-                <div class="text-3xl font-light flex justify-center p-5">Soy Carlos Moraga</div>
+                <div class="lg:text-5xl sm:text-3xl font-bold lg:px-20 sm:px-10 text-justify flex justify-center">Soy Carlos Moraga</div>
+                <!-- <div class="text-3xl font-light flex justify-center p-5">Soy Carlos Moraga</div> -->
                 <div class="lg:text-2xl sm:text-xl font-light text-justify p-5">
-                  Desarrollador Web Junior en busca de oportunidades para aprender y crecer
-                  en el mundo del desarrollo de software. <br />
+                  Un apasionado por el desarrollado web, busco
+                  constantemente oportunidades para ampliar mis
+                  conocimientos, ya que es la clave para alcanzar el éxito
+                  en el área del desarrollo.
+                  Mi objetivo es encontrar un entorno laboral que no solo
+                  me brinde la posibilidad de crecer profesionalmente, sino
+                  también de enriquecerme como persona.
+                  <br />
                 </div>
               </div>
             </UCard>
@@ -153,7 +158,7 @@ setTimeout(() => {
       <section class="projects" id="projects">
         <div class="font-mono">
           <h2 class="lg:text-5xl sm:text-3xl font-bold lg:px-20 sm:px-10 text-justify flex justify-center p-6">
-            Proyectos
+            Repositorio de Proyectos
           </h2>
           <div class="grid lg:grid-cols-4 sm:grid-col-1 gap-2 font-mono">
             <div class="lg:col-start-1 lg:col-span-2 sm:col-start-1 sm:col-span-1">
